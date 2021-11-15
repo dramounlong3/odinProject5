@@ -1,0 +1,65 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  height: 15vh;
+}
+
+/*避免按到i tag，造成JS傳event target有誤差*/
+i {
+  pointer-events: none;
+}
+
+.read {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(128, 128, 128, 0.5)), to(rgba(128, 128, 128, 0.2)));
+  background: linear-gradient(0deg, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.2));
+  border-color: gray;
+}
+
+.tr {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=library.css.map */
