@@ -17,7 +17,11 @@ i {
 }
 
 .read {
-  background: linear-gradient(0deg, rgba(gray, 0.5), rgba(gray, 0.2));
+  background: linear-gradient(
+    0deg,
+    rgba(128, 128, 128, 0.5),
+    rgba(128, 128, 128, 0.2)
+  );
   border-color: gray;
 }
 
