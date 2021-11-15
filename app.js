@@ -1,9 +1,9 @@
 let section = document.querySelector("section");
 
 function handleDelete(e) {
+  e.preventDefault();
   let myList = localStorage.getItem("list");
   let myListArray = JSON.parse(myList);
-  console.log(myListArray);
 
   //delete book
   myListArray.forEach((item) => {
@@ -50,6 +50,7 @@ function handleDelete(e) {
 }
 
 function handleRead(e) {
+  e.preventDefault();
   let myList = localStorage.getItem("list");
   let myListArray = JSON.parse(myList);
 
